@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            @*<div class="footer-below">
+            <div class="footer-below">
                 <div class="container">
                     <div class="row">
                         
@@ -68,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-            </div>*@
+            </div>*
         </footer>
 
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
