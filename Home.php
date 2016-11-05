@@ -1,6 +1,21 @@
 <?php get_header(); ?>
 
-<<<<<<< HEAD
+<div id="content" class="body-content" style="background-color:#f2f2f2">
+    <!-- Header -->
+    <!-- <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="~/images/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Start Bootstrap</span>
+                        <hr class="star-light">
+                        <span class="skills">Web Developer - Graphic Artist - User Experience Designer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </header>-->
     <!-- inicio Carousel de imagens topo -->
 
     <div style="margin-bottom:10px" class="carousel-top"
@@ -14,9 +29,9 @@
     </div>
     <!-- fim Carousel de imagens topo -->
     <!-- notícias -->
+  
+    
     <div class="row row-centered container" style="margin-bottom:40px">
-    <?php query_posts(array('category_name'  => 'Outro',
-                            'posts_per_page'=> '2')); ?>
         <h3 class="text-center"><strong>Últimas notícias</strong></h3>
         <div style="margin-top:40px">
         <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
@@ -45,14 +60,8 @@
             <h4>Quem somos</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <a class="btn btn-primary">CONTINUAR LENDO</a>
-        </div>
     </div>
-
-<?php get_footer(); ?>
-=======
-<div id="content" class="body-content" style="background-color:#f2f2f2">
-     <?php get_header(); ?>
+</div>
 <hr>
 </div>
 <?php get_footer(); ?>
->>>>>>> origin/master
