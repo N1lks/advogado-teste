@@ -1,6 +1,5 @@
-<?php get_header(); ?>
-
-<div id="content" class="body-content" style="background-color:#f2f2f2">
+ <?php query_posts(array('category_name'  => 'Socios')); ?>
+ 
  <header class="header-container" style="margin-bottom:50px">
     <div class="container" style="padding-left:0">
         <h2 class="text-left">Sócios</h2>
@@ -98,6 +97,5 @@
 
     </div>
 </div>
-<hr>
-</div>
+
 <?php get_footer(); ?>

@@ -1,4 +1,8 @@
-  
+
+<!-- end container content -->
+<hr>
+</div>
+
         <!-- Footer -->
         <footer class="text-center">
             <div class="footer-above">
