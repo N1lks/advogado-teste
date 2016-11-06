@@ -55,19 +55,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="defaultNavbar1">
                 <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
                     <li class="active"><a href="~/#">HOME<span class="sr-only">(current)</span></a></li>
-                    <li><a href="">QUEM SOMOS</a></li>
-                    <li><a href="~/Home/Areas">ÁREAS DE ATUAÇÃO</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/QuemSomos">QUEM SOMOS</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/Areas">ÁREAS DE ATUAÇÃO</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/Socios">SÓCIOS</a></li>
-=======
-                    <li class="active"><a href="<?php bloginfo('url'); ?>/index">HOME<span class="sr-only">(current)</span></a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/quemSomos">QUEM SOMOS</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/areas">ÁREAS DE ATUAÇÃO</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>/Socios.php">SÓCIOS</a></li>
->>>>>>> origin/master
-                    <li><a href="#page">ARTIGOS</a></li>
-                    <li><a href="#page">NOTÍCIAS</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/Artigos">ARTIGOS</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/">NOTÍCIAS</a></li>
                     <li><a data-target="#" data-toggle="pill" href="#page">CONTATO</span></a></li>
 
                 </ul>
