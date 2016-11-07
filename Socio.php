@@ -1,19 +1,4 @@
-<?php /*
-Template Name: Modelo Socios
-*/
-?>
-
 <?php get_header(); ?>
- <header class="header-container" style="margin-bottom:50px">
-    <div class="container" style="padding-left:0">
-        <h2 class="text-left">Sócios</h2>
-    </div>
-</header>
-
-<div class="row container">
-    <div class="row col-lg-8 col-lg-offset-2">
-
-<?php query_posts(array('category_name'  => 'Socios')); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="col-md-6">
             <div class="card">
@@ -41,9 +26,4 @@ Template Name: Modelo Socios
             </div>
         </div>
 <?php endwhile; endif; ?>
-
-
-    </div>
-</div>
-
 <?php get_footer(); ?>
