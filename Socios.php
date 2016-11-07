@@ -14,11 +14,9 @@ Template Name: Modelo Socios
     <div class="row col-lg-8 col-lg-offset-2">
 
 <?php query_posts(array('category_name'  => 'Socios')); ?>
-<<<<<<< HEAD
+
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-=======
-<?php while (get_users(array(field)))?>
->>>>>>> 1bc3a8ba4d672882734219ea456a0154a992e54f
+
         <div class="col-md-6">
             <div class="card">
                 <div class="card-block">
@@ -44,13 +42,8 @@ Template Name: Modelo Socios
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-<?php endwhile; endif; ?>
-
-=======
 
 <?php endwhile; endif; ?>
->>>>>>> 1bc3a8ba4d672882734219ea456a0154a992e54f
 
     </div>
 </div>

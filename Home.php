@@ -22,7 +22,7 @@
             <div class="col-md-5 col-centered">
                 <span class="top-text"><?php the_date(); ?></span>
                 <h4 class="text-ml">
-                    <strong><?php the_title(); ?></strong>
+                    <strong><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></strong>
                 </h4><p><?php the_content(); ?></p>
             </div>
         <?php endwhile; ?>
