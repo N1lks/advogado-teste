@@ -61,7 +61,7 @@
                     <li><a href="<?php bloginfo('url'); ?>/Socios">SÓCIOS</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/Artigos">ARTIGOS</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/Noticias">NOTÍCIAS</a></li>
-                    <li><a data-target="#" data-toggle="pill" href="<?php bloginfo('url'); ?>/Contato">CONTATO</span></a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/Contato">CONTATO</span></a></li>
 
                 </ul>
             </div>

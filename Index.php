@@ -1,5 +1,5 @@
 <?php /*
-Template Name: Modelo Noticias
+Template Name: Modelo Index
 */
 ?>
 
@@ -7,7 +7,7 @@ Template Name: Modelo Noticias
 
 <header class="header-container" style="margin-bottom:50px">
     <div class="container" style="padding-left:0">
-        <h2 class="text-left">Artigos</h2>
+        <h2 class="text-left"><?php single_cat_title(); ?></h2>
     </div>
 </header>
 

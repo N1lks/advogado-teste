@@ -2,8 +2,8 @@
 
     <!-- inicio Carousel de imagens topo -->
 
-    <div style="margin-bottom:10px" class="carousel-top"
-        data-flickity='{"pageDots": true, "wrapAround": true, "imagesLoaded": true}'>
+      <div style="margin-bottom:10px" class="carousel-top"
+         data-flickity='{"pageDots": true, "wrapAround": true, "imagesLoaded": true}'>
         <div class="carousel-cell-top">
             <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/content/images/Goiania_by-night.jpg" alt="image 1" />
         </div>
@@ -14,7 +14,7 @@
     <!-- fim Carousel de imagens topo -->
     <!-- notícias -->
     <div class="row row-centered container" style="margin-bottom:40px">
-    <?php query_posts(array('category_name'  => 'Outro',
+    <?php query_posts(array('category_name'  => 'Noticias',
                             'posts_per_page'=> '2')); ?>
         <h3 class="text-center"><strong>Últimas notícias</strong></h3>
         <div style="margin-top:40px">

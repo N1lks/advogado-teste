@@ -362,11 +362,11 @@
         <script src="<?php bloginfo('template_url'); ?>/scripts/js/flickity.pkgd.min.js"></script>
 
         <script>
-            //$('ul.nav > li').click(function (e) {
+            // $('ul.nav > li').click(function (e) {
             //    e.preventDefault();
             //    $('ul.nav > li').removeClass('active');
             //    $(this).addClass('active');
-            //});
+            // });
 
             $('.navbar-lower').affix({
                 offset: { top: 50 }
