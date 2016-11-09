@@ -14,6 +14,15 @@ Template Name: Modelo Areas
 <div class="row container">
     <div class="col-md-8 col-md-offset-2">
 
+
+<?php 
+    $meta = get_user_meta(get_the_author_meta( 'ID' ),'theme_fuse_extends_user_options',TRUE);
+                    
+    foreach( $meta as $key => $item )
+    {
+        if ( $key == 'facebook' || $key == 'twitter' || $key == 'in' || $key == 'atividade') $tfuse_meta[$key] = $item;
+    }
+?>
 <?php query_posts(array('category_name'  => 'Areas')); ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -33,8 +42,8 @@ Template Name: Modelo Areas
                     </div>
                     <hr class="text-ml" />
                     <p class="card-text">
-                        <h5>Nome advogado</h5>
-                        <h6 class="top-text">especialização</h6>
+                        <h5><?php the_author_meta('first_name')?>&nbsp;<?php the_author_meta('last_name'); ?> <!-- GABIARRA HUEHUE--></h5>
+                        <h6 class="top-text"><?php $meta ?></h6>
                     </p>
                     <a href="<?php the_permalink(); ?>" class="card-link">VER MAIS</a>
                 </div>
@@ -43,8 +52,5 @@ Template Name: Modelo Areas
 <?php endwhile; endif; ?>
     </div>
 </div>
-
-
-
 
 <?php get_footer(); ?>
