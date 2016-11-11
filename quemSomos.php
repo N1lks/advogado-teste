@@ -45,10 +45,12 @@ Template Name: Modelo QuemSomos
             <div class="tab-content content clearfix">
                 <div class="tab-pane active" id="1a">
                     <h3 class="header-text"><strong>Sobre a Moraes e Leal</strong></h3>
+                    
+                    <?php while (have_posts()) : the_post(); ?>
+                        
+                        <?php the_content(); ?>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis efficitur eget arcu non aliquet. Sed in eros laoreet.</p>
+                    <?php endwhile;?>
 
                 </div>
                 <div class="tab-pane" id="2a">

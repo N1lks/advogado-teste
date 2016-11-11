@@ -13,8 +13,6 @@ Template Name: Modelo Socios
 <div class="row container">
     <div class="row col-lg-8 col-lg-offset-2">
 
-<!--<?php query_posts(array('category_name'  => 'Socios')); ?>-->
-<!--<?php if (have_posts()) : while (have_posts()) : the_post(); ?>-->
 
 <?php
 /*
@@ -68,7 +66,6 @@ $user_nickname=$user->nickname;
 
 //get the user's description ( the biographical info field, )
 $user_profile=$user->description;
-
 ?>
 <!-- Now here you can display each users info using the variables defined above -->
     <div class="col-md-6">
@@ -76,12 +73,12 @@ $user_profile=$user->description;
                 <div class="card-block">
                     <div class="card-title vertical-align col-centered">
                         <div class="col-md-4 col-sm-12">
-                            <img src="<?php  $grav_url; ?>" class="img-circle img-responsive header-text" />
+                            <img src="<?php echo $grav_url; ?>" class="img-circle img-responsive header-text" />
                         </div>
                         <div class="card-text col-md-8 col-sm-12 headehr-text">
                             <h4 class="center">
-                                <?php  $user_fullname; ?><br />
-                                <small><?php echo $user->last_name; ?></small>
+                                <?php echo $user_fullname; ?><br />
+                                <small><?php echo $at; ?></small>
                             </h4>
                         </div>
 
@@ -95,37 +92,8 @@ $user_profile=$user->description;
                 </div>
             </div>
         </div>
-        
 <!-- end the users loop. -->
 <?php endforeach; ?>
-
-        <!--<div class="col-md-6">
-            <div class="card">
-                <div class="card-block">
-                    <div class="card-title vertical-align col-centered">
-                        <div class="col-md-4 col-sm-12">
-                        <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-                            <img src="<?php echo $url ?>" class="img-circle img-responsive header-text" />
-                        </div>
-                        <div class="card-text col-md-8 col-sm-12 headehr-text">
-                            <h4 class="center">
-                                <?php the_title(); ?><br />
-                                <small>especialização</small>
-                            </h4>
-                        </div>
-
-                    </div>
-                    <div class="card-text col-sm-12">
-                        <p class="top-text">
-                            <?php the_content(); ?>
-                        </p>
-                        <a href="<?php the_permalink(); ?>" class="card-link">VER MAIS</a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
-<!--<?php endwhile; endif; ?>-->
 
     </div>
 </div>
