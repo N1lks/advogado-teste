@@ -31,7 +31,7 @@ $sort= "user_registered";
 $default = "http://download.seaicons.com/icons/artdesigner/webtoys/48/User-black-icon.png";
 
 //the size of the gravatar , here 96px
-$size = 96;
+$size = 48;
 
 //Build the custom database query to fetch all user IDs
 $all_users_id = $wpdb->get_col( $wpdb->prepare(
@@ -66,6 +66,10 @@ $user_nickname=$user->nickname;
 
 //get the user's description ( the biographical info field, )
 $user_profile=$user->description;
+
+// meta dado extra
+$at=get_user_meta($i_users_id,'atividade',true);
+
 ?>
 <!-- Now here you can display each users info using the variables defined above -->
     <div class="col-md-6">
